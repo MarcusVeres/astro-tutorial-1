@@ -11,6 +11,10 @@ const identity = {
 }
 
 const skills = ["Writing" , "Speaking", "Programming", "Design", "Sex"]
+
+const happy = true;
+const finished = false;
+const goal = "side your butt";
 ---
 
 <html lang="en">
@@ -32,7 +36,7 @@ const skills = ["Writing" , "Speaking", "Programming", "Design", "Sex"]
 		<h2>All about <i>{subject}</i>, boo ;)</h2>
         <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
         <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
-        <hr/>
+        <hr>
         <p>Here are a few facts about me:</p>
         <ul>
         <li>My name is {identity.firstName} {identity.lastName}.</li>
@@ -45,5 +49,10 @@ const skills = ["Writing" , "Speaking", "Programming", "Design", "Sex"]
         <ul>
         {skills.map((skill) => <li>{skill}</li>)}
         </ul>
+        <hr>
+        <h2>Conditional logic:</h2>
+        {happy && <p>I am happy to be learning Astro!</p>}
+        {finished && <p>I finished this tutorial!</p>}
+        {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 	</body>
 </html>
