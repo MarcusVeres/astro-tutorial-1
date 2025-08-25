@@ -1,5 +1,6 @@
 ---
-
+const pageTitle = "About Me"
+const subject = "you"
 ---
 
 <html lang="en">
@@ -9,7 +10,7 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content="Author: the bestest boy. Length: 1 page. Price: priceless.">
-		<title>Astro // About</title>
+		<title>Astro // {pageTitle}</title>
 	</head>
 	<body>
         <nav>
@@ -17,8 +18,8 @@
             <a href="/about/">About</a>
             <a href="/blog/">Blog</a>
         </nav>
-		<h1>Hello, this is about page</h1>
-		<h2>All about <i>you</i>, boo ;)</h2>
+		<h1>{pageTitle}</h1>
+		<h2>All about <i>{subject}</i>, boo ;)</h2>
         <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
         <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
 	</body>
