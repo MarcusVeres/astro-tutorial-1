@@ -31,6 +31,10 @@ const treatos = 5;
                 color: #c10b10;
                 font-size: 3.14rem;
             }
+            .skill {
+                color: #23cc43;
+                font-weight: bold;
+            }
         </style>
 	</head>
 	<body>
@@ -54,7 +58,7 @@ const treatos = 5;
         </ul>
         <p>My skills are:</p>
         <ul>
-        {skills.map((skill) => <li>{skill}</li>)}
+        {skills.map((skill) => <li class="skill">{skill}</li>)}
         </ul>
         <hr>
         <h2>Conditional logic:</h2>
