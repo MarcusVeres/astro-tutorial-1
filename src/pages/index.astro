@@ -21,5 +21,10 @@ const pageTitle = "Home"
 		<h1>I am the bestest Astro-naut at {pageTitle}!</h1>
 		<h2>#1 Good boy :3</h2>
 		<Footer />
+		<script>
+			document.querySelector('.hamburger')?.addEventListener('click', () => {
+			document.querySelector('.nav-links')?.classList.toggle('expanded');
+			});
+		</script>
 	</body>
 </html>
