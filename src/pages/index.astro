@@ -1,5 +1,5 @@
 ---
-
+const pageTitle = "Home"
 ---
 
 <html lang="en">
@@ -9,15 +9,15 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content="Author: the bestest boy. Length: 1 page. Price: priceless.">
-		<title>Astro</title>
+		<title>Astro // {pageTitle}</title>
 	</head>
 	<body>
 		<nav>
-            <a href="/">Home</a>
+            <a href="/">{pageTitle}</a>
             <a href="/about/">About</a>
 			<a href="/blog/">Blog</a>
         </nav>
-		<h1>I am the bestest Astro-naut!</h1>
+		<h1>I am the bestest Astro-naut at {pageTitle}!</h1>
 		<h2>#1 Good boy :3</h2>
 	</body>
 </html>
