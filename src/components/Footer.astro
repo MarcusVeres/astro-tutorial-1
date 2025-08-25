@@ -1,6 +1,17 @@
 ---
 import Social from './Social.astro'
+
+const borderStyle = "1px solid #ccc"
 ---
+<style define:vars={{ borderStyle }}>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    border-bottom: var(--borderStyle);
+    border-top: var(--borderStyle);
+  }
+</style>
 
 <footer>
   <p>Learn more about my projects on 
