@@ -1,4 +1,5 @@
 ---
+import Footer from '../components/Footer.astro'
 import Navigation from '../components/Navigation.astro'
 
 import '../styles/global.css'
@@ -74,5 +75,6 @@ const skillCase = "uppercase"
         {finished && <p>I finished this tutorial!</p>}
         {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
         <p>Today I ate {treatos} treatos, which is {treatos > 3 ? "more than" : "less than"} 3.
+        <Footer />
 	</body>
 </html>
