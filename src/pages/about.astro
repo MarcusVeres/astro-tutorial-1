@@ -16,6 +16,10 @@ const happy = true;
 const finished = false;
 const goal = "side your butt";
 const treatos = 5;
+
+const skillColor = "salmon"
+const skillWeight = "bold"
+const skillCase = "uppercase"
 ---
 
 <html lang="en">
@@ -26,14 +30,15 @@ const treatos = 5;
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content="Author: the bestest boy. Length: 1 page. Price: priceless.">
 		<title>Astro // {pageTitle}</title>
-        <style>
+        <style define:vars={{skillColor, skillWeight, skillCase}}>
             h1 {
                 color: #c10b10;
                 font-size: 3.14rem;
             }
             .skill {
-                color: #23cc43;
-                font-weight: bold;
+                color: var(--skillColor);
+                font-weight: var(--skillWeight);
+                text-transform: var(--skillCase);
             }
         </style>
 	</head>
